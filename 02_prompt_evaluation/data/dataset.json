@@ -1,0 +1,37 @@
+[
+  {
+    "task": "Create an IAM policy that allows read-only access to all S3 buckets and objects in an AWS account",
+    "format": "json",
+    "solution_criteria": [
+      "Uses correct IAM policy structure with Version, Statement fields",
+      "Includes proper S3 read actions (s3:GetObject, s3:ListBucket, etc.)",
+      "Uses appropriate resource ARN format for S3 (arn:aws:s3:::* and arn:aws:s3:::*/*)",
+      "Effect is set to 'Allow'",
+      "Does not include write or delete permissions"
+    ]
+  },
+  {
+    "task": "Write a Python function that takes an AWS S3 object key and returns True if it represents a log file based on common log file patterns",
+    "format": "python",
+    "solution_criteria": [
+      "Function accepts a single string parameter (S3 object key)",
+      "Returns boolean value (True/False)",
+      "Checks for common log file extensions (.log, .txt, .out)",
+      "Handles case-insensitive matching",
+      "Considers common log file naming patterns (contains 'log', 'access', 'error', etc.)",
+      "Function is syntactically correct Python code"
+    ]
+  },
+  {
+    "task": "Create a regular expression that matches valid AWS IAM role ARNs",
+    "format": "regex",
+    "solution_criteria": [
+      "Matches the standard IAM role ARN format: arn:aws:iam::account-id:role/role-name",
+      "Validates 12-digit AWS account ID format",
+      "Allows valid IAM role name characters (alphanumeric, plus +, =, ,, ., @, -)",
+      "Handles role names with path prefixes (e.g., /service-role/MyRole)",
+      "Does not match other AWS resource ARNs (S3, EC2, etc.)",
+      "Uses proper regex syntax and escaping"
+    ]
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "output": "[\n    \"Social structures\",\n    \"Digital communication platforms\",\n    \"Interpersonal relationships\",\n    \"Social connections\",\n    \"Technological mediation\",\n    \"Collective identity\",\n    \"Social belonging\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Contemporary social structures are increasingly defined by complex networks of interpersonal relationships that transcend traditional institutional boundaries. Sociologists argue that digital communication platforms have fundamentally transformed how individuals construct and maintain social connections, creating dynamic webs of interaction that challenge classical theories of community and social cohesion. These emerging patterns demonstrate how technological mediation reshapes human interaction, producing new forms of collective identity and social belonging."
+      },
+      "solution_criteria": [
+        "Accurately identify key sociological topics",
+        "Capture core conceptual themes from the text",
+        "Represent topics as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A sociology research paper examining social structures and human interactions"
+    },
+    "score": 9,
+    "reasoning": "The solution fully meets the mandatory requirements by providing a JSON array of topic strings that comprehensively represent the core sociological themes in the passage. The topics are extracted directly from the text, cover the key conceptual elements, and are presented in a clean, straightforward manner."
+  },
+  {
+    "output": "[\n    \"Sustainable ecosystem management\",\n    \"Ecological interactions\",\n    \"Climate change\",\n    \"Biodiversity\",\n    \"Habitat ranges\",\n    \"Food web dynamics\",\n    \"Coastal marine ecosystems\",\n    \"Coral bleaching\",\n    \"Species migration\",\n    \"Conservation strategies\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Sustainable ecosystem management requires a holistic approach to understanding complex ecological interactions. Climate change significantly impacts biodiversity, with rising temperatures altering habitat ranges and disrupting intricate food web dynamics. Researchers have observed that coastal marine ecosystems are particularly vulnerable, experiencing accelerated coral bleaching and shifts in species migration patterns that challenge traditional conservation strategies."
+      },
+      "solution_criteria": [
+        "Correctly identify key topical themes from the text",
+        "Generate a JSON array of topic strings",
+        "Capture the core conceptual elements of the passage"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "An environmental science text addressing sustainability and ecological systems"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts key topics from the scholarly text, capturing the core conceptual elements with precision. It meets all mandatory requirements by presenting a clean JSON array of topic strings without additional commentary. The topics comprehensively cover the ecological and environmental themes discussed in the passage."
+  },
+  {
+    "output": "[\n    \"Language acquisition\",\n    \"Cognitive development\",\n    \"Linguistic exposure\",\n    \"Neurological studies\",\n    \"Brain plasticity\",\n    \"Pattern recognition\",\n    \"Grammatical structure\",\n    \"Chomsky's language theories\",\n    \"Piaget's developmental theories\",\n    \"Communication skill development\",\n    \"Cognitive mechanisms\",\n    \"Linguistic stimuli\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Language acquisition research reveals complex interactions between cognitive development and linguistic exposure. Neurological studies suggest that children's brains possess remarkable plasticity during early developmental stages, enabling rapid pattern recognition and grammatical structure internalization. Theories proposed by Chomsky and Piaget highlight the intrinsic human capacity for language learning, emphasizing both innate cognitive mechanisms and environmental linguistic stimuli as critical factors in communication skill development."
+      },
+      "solution_criteria": [
+        "Extract a minimum of 3-4 distinct topics from the passage",
+        "Represent topics as a valid JSON array of strings",
+        "Capture key conceptual domains mentioned in the text"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A linguistics article exploring language acquisition and cognitive theories"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts multiple distinct topics from the passage, representing key conceptual domains related to language acquisition and cognitive development. The JSON array meets all mandatory requirements, capturing both theoretical perspectives and research domains mentioned in the text."
+  },
+  {
+    "output": "[\n    \"Quantum computing\",\n    \"Quantum mechanical phenomena\", \n    \"Superposition\",\n    \"Entanglement\", \n    \"Superconducting qubit architectures\",\n    \"Quantum circuits\",\n    \"Coherence times\", \n    \"Error rates\",\n    \"Cryptography\", \n    \"Machine learning\",\n    \"Computational chemistry simulations\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Quantum computing represents a paradigm shift in computational complexity, leveraging quantum mechanical phenomena like superposition and entanglement to perform complex algorithmic operations. Recent advancements in superconducting qubit architectures have enabled researchers to develop quantum circuits with increased coherence times and reduced error rates, potentially revolutionizing cryptography, machine learning, and computational chemistry simulations."
+      },
+      "solution_criteria": [
+        "Correctly identify all major topics in the text",
+        "Generate a JSON array containing extracted topics",
+        "Ensure topics are precise and representative of the passage"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A computer science research paper with technical and theoretical subtopics"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts topics from the quantum computing passage, meeting all mandatory requirements. The topics are accurately derived from the text, covering both technical concepts and potential application areas. The JSON array format is correct, and each topic is a clean, descriptive string without additional commentary."
+  },
+  {
+    "output": "[\n    \"Phenomenological consciousness\",\n    \"Dasein\",\n    \"Being-in-the-world\",\n    \"Subject-object dichotomy\", \n    \"Existential understanding\",\n    \"Temporal awareness\",\n    \"Meaning-making\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Phenomenological consciousness represents a complex interplay between subjective experience and ontological structures of perception. Heidegger's concept of Dasein explores the fundamental mode of human being-in-the-world, transcending traditional subject-object dichotomies and revealing how existential understanding emerges through lived experience and temporal awareness. This philosophical investigation challenges epistemological frameworks by positioning consciousness not as a static entity, but as a dynamic, contextually embedded process of meaning-making."
+      },
+      "solution_criteria": [
+        "Correctly identify core philosophical topics",
+        "Capture key conceptual domains mentioned",
+        "Represent topics as a JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A philosophical text with abstract conceptual and philosophical domains"
+    },
+    "score": 10,
+    "reasoning": "The solution meets all mandatory requirements perfectly. It extracts core philosophical topics from the passage, represents them as a clean JSON array of strings, and avoids any extraneous commentary. The topics comprehensively cover the key conceptual domains discussed in the text."
+  },
+  {
+    "output": "[\n    \"Neuroplasticity\",\n    \"Neural networks\",\n    \"Synaptic connections\",\n    \"Learning experiences\",\n    \"Prefrontal cortex\",\n    \"Executive function\",\n    \"Cognitive control\",\n    \"Neurogenesis\",\n    \"Hippocampus\",\n    \"Brain adaptation\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Neuroplasticity represents a fundamental mechanism of brain adaptation, where neural networks dynamically reorganize synaptic connections in response to learning experiences. Recent studies using advanced neuroimaging techniques have revealed that the prefrontal cortex demonstrates remarkable plasticity, particularly in regions associated with executive function and cognitive control. Researchers have identified that neurogenesis continues in specific hippocampal regions throughout adulthood, challenging previous assumptions about brain structural rigidity."
+      },
+      "solution_criteria": [
+        "Accurately extract 3-5 distinct neuroscience topics",
+        "Represent topics as a valid JSON array of strings",
+        "Capture key conceptual domains from the text"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A neuroscience article containing complex brain research terminology"
+    },
+    "score": 8,
+    "reasoning": "The solution successfully meets all mandatory requirements. It provides a valid JSON array of strings representing neuroscience topics from the text. While the number of topics exceeds the recommended range, each topic is relevant and directly derived from the passage. The solution captures key conceptual domains of neuroplasticity, brain structure, and neural function."
+  },
+  {
+    "output": "[\n    \"Climate change research\",\n    \"Environmental science\",\n    \"Economics\",\n    \"Social policy\",\n    \"Global temperatures\",\n    \"Ecosystem disruption\",\n    \"Anthropogenic carbon emissions\",\n    \"Ocean acidification\",\n    \"Biodiversity loss\",\n    \"Agricultural productivity\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Climate change research has become increasingly interdisciplinary, integrating perspectives from environmental science, economics, and social policy. Recent studies demonstrate the complex interactions between rising global temperatures, ecosystem disruption, and human socioeconomic systems. Researchers are exploring how anthropogenic carbon emissions impact ocean acidification, biodiversity loss, and regional agricultural productivity, emphasizing the need for comprehensive, collaborative approaches to understanding and mitigating climate change's multifaceted challenges."
+      },
+      "solution_criteria": [
+        "Accurately extract all distinct research topics mentioned",
+        "Represent topics as a JSON array of strings",
+        "Capture the interdisciplinary nature of the topics"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A passage discussing climate change with interdisciplinary research topics"
+    },
+    "score": 10,
+    "reasoning": "The solution fully meets all mandatory and secondary criteria. It successfully extracts distinct topics from the text, represents them as a clean JSON array of strings, and reflects the interdisciplinary scope of the original passage. The topics cover scientific, economic, and policy dimensions of climate change research."
+  },
+  {
+    "output": "[\n    \"Cognitive behavioral psychology\",\n    \"Mental processes\",\n    \"Emotional responses\",\n    \"Behavioral patterns\",\n    \"Cognitive distortions\",\n    \"Anxiety disorders\",\n    \"Risk perception\",\n    \"Neuropsychological studies\",\n    \"Neural pathways\",\n    \"Prefrontal cortex\",\n    \"Emotional regulation\",\n    \"Adaptive behavioral responses\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Cognitive behavioral psychology explores the intricate relationships between mental processes, emotional responses, and behavioral patterns. In clinical research, therapists have observed how cognitive distortions in patients with anxiety disorders can significantly impact their perception of risk and threat. Neuropsychological studies further demonstrate that these cognitive mechanisms are deeply rooted in neural pathways, with prefrontal cortex activity playing a crucial role in emotional regulation and adaptive behavioral responses."
+      },
+      "solution_criteria": [
+        "Identify all distinct psychological domains mentioned",
+        "Capture key sub-topics within the psychological text",
+        "Represent topics as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "An excerpt from a psychology paper with multiple sub-fields of psychology"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts topics from the psychological text, meeting all mandatory requirements. The JSON array contains distinct topics representing different psychological domains, sub-topics, and conceptual areas mentioned in the passage. Each topic is a clear, concise string without additional commentary, and the array comprehensively captures the key concepts discussed."
+  },
+  {
+    "output": "[\n    \"Medieval European geopolitics\",\n    \"Nation-states\",\n    \"Religious institutions\",\n    \"Feudal power structures\",\n    \"Byzantine Empire\",\n    \"Holy Roman Empire\",\n    \"Territorial expansions\",\n    \"Cultural exchanges\",\n    \"Crusades\",\n    \"Mediterranean diplomacy\",\n    \"Near Eastern interactions\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The complex geopolitical landscape of medieval Europe was shaped by intricate interactions between emerging nation-states, religious institutions, and feudal power structures. From the Byzantine Empire's gradual decline to the rise of the Holy Roman Empire in Central Europe, territorial expansions and cultural exchanges profoundly transformed societal dynamics. The Crusades, spanning from the late 11th to the 13th centuries, exemplified how religious motivations intersected with political ambitions, creating a nuanced network of diplomatic and military interactions across the Mediterranean and Near Eastern regions."
+      },
+      "solution_criteria": [
+        "Correctly identify key historical topics",
+        "Capture breadth of geographic and thematic scope",
+        "Represent topics as a valid JSON array of strings"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A history text covering multiple historical periods and geographic regions"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts key topics from the scholarly text, capturing the geopolitical, religious, and territorial dimensions discussed. The topics are appropriately abstracted, represent the text's core themes, and are presented in a clean JSON array format. All mandatory requirements are met with high fidelity."
+  },
+  {
+    "output": "[\n    \"CRISPR-Cas9 gene editing\",\n    \"Molecular biology\",\n    \"Genetic modifications\",\n    \"Gene editing techniques\",\n    \"Guide RNA\",\n    \"DNA targeting\",\n    \"Genetic disorders\",\n    \"Agricultural crop resilience\",\n    \"Genetic interactions\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in CRISPR-Cas9 gene editing have revolutionized molecular biology, enabling precise genetic modifications across multiple organism types. By utilizing guide RNA sequences to target specific DNA segments, researchers can now efficiently introduce mutations, delete problematic gene sequences, or insert therapeutic genetic material with unprecedented accuracy. This technique has significant implications for treating genetic disorders, enhancing agricultural crop resilience, and understanding complex genetic interactions at the molecular level."
+      },
+      "solution_criteria": [
+        "Correctly identify all major topics discussed in the passage",
+        "Represent topics as a valid JSON array of strings",
+        "Capture both broad and specific themes related to genetic engineering"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A biotechnology paper discussing genetic engineering and molecular techniques"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts key topics from the passage, meeting all mandatory requirements. It covers the main themes of CRISPR technology, genetic modifications, and their applications, while maintaining a valid JSON array format. The topics are directly derived from the text and represent both general and specific aspects of the scientific content."
+  },
+  {
+    "output": "[\n    \"James Webb Space Telescope\",\n    \"Exoplanetary atmospheres\",\n    \"Galactic formation\",\n    \"Spectroscopic data\",\n    \"Planetary systems\",\n    \"Molecular signatures\",\n    \"Gas giants\",\n    \"Chemical processes\",\n    \"Planetary evolution\",\n    \"Habitability\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent observations from the James Webb Space Telescope have revealed unprecedented insights into exoplanetary atmospheres and early galactic formation. By analyzing spectroscopic data from distant planetary systems, researchers have identified complex molecular signatures in gas giants orbiting nearby star clusters, suggesting intricate chemical processes that challenge previous models of planetary evolution and potential habitability."
+      },
+      "solution_criteria": [
+        "Correctly identify core astronomy topics",
+        "Produce a JSON array of topics",
+        "Capture both specific and broad subject areas"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "An astronomy research excerpt covering cosmological and planetary science topics"
+    },
+    "score": 9,
+    "reasoning": "The solution fully meets all mandatory and secondary criteria. It successfully extracts key topics from the scholarly text, presents them in a clean JSON array, and covers both specific research elements and broader scientific domains. The topics accurately reflect the content of the original passage about astronomical research."
+  },
+  {
+    "output": "[\n    \"Deep learning\",\n    \"Machine learning paradigms\",\n    \"Neural network architectures\",\n    \"Convolutional Neural Networks\",\n    \"Computer vision\",\n    \"Recurrent neural networks\",\n    \"Transformer models\",\n    \"Natural language processing\",\n    \"Generative adversarial networks\",\n    \"Synthetic data generation\",\n    \"Probabilistic representations\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advancements in deep learning have significantly transformed machine learning paradigms, particularly in neural network architectures. Convolutional Neural Networks (CNNs) have demonstrated remarkable performance in computer vision tasks, while recurrent neural networks (RNNs) and transformer models have revolutionized natural language processing. The emergence of generative adversarial networks (GANs) has further expanded the capabilities of AI in generating synthetic data and understanding complex probabilistic representations."
+      },
+      "solution_criteria": [
+        "Correctly identify all major machine learning topics mentioned",
+        "Produce a JSON array of topics as strings",
+        "Ensure no duplicate topics are included"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "An artificial intelligence research document with machine learning subtopics"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully meets all mandatory and secondary criteria. It extracts key machine learning topics from the text, presents them as a clean JSON array of strings without duplicates, and covers the major concepts mentioned in the passage."
+  },
+  {
+    "output": "[\n    \"Molecular signal transduction\",\n    \"Protein kinases\",\n    \"Phosphatase enzymes\",\n    \"Mitogen-activated protein kinase (MAPK) cascade\",\n    \"Phosphorylation events\",\n    \"Gene expression\",\n    \"Cellular behavior\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The intricate molecular mechanisms of cellular signal transduction reveal complex interactions between protein kinases and phosphatase enzymes. Specifically, the mitogen-activated protein kinase (MAPK) cascade demonstrates how extracellular stimuli are transformed into precise intracellular responses through a series of phosphorylation events that modulate gene expression and cellular behavior."
+      },
+      "solution_criteria": [
+        "Correctly identify key scientific topics from the text",
+        "Generate a JSON array of topic strings",
+        "Capture both broad and specific topic levels"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A biochemistry paper exploring molecular interactions and cellular processes"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts key scientific topics from the molecular biology text, meeting all mandatory requirements. The topics are scientifically relevant, cover the main concepts discussed, and are presented in a clean JSON array format. Minor improvements could be made in topic refinement, but overall the solution is highly effective."
+  },
+  {
+    "output": "[\n    \"Cultural diversity\",\n    \"Indigenous communities\",\n    \"Amazon basin\",\n    \"Traditional knowledge systems\",\n    \"Ecological understanding\",\n    \"Intergenerational learning\",\n    \"Social networks\",\n    \"Ancestral ecological wisdom\",\n    \"Human adaptation\",\n    \"Social development\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "In contemporary anthropological research, cultural diversity represents a complex tapestry of human adaptation and social development. Indigenous communities in the Amazon basin demonstrate remarkable resilience through traditional knowledge systems that integrate ecological understanding with intergenerational learning practices. These communities navigate environmental challenges by maintaining intricate social networks and preserving ancestral ecological wisdom that has sustained human populations for thousands of years."
+      },
+      "solution_criteria": [
+        "Accurately identify 3-5 primary topics from the text",
+        "Represent topics as a valid JSON array of strings",
+        "Capture the core conceptual themes present in the passage"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "An anthropological text exploring cultural diversity and human development"
+    },
+    "score": 8,
+    "reasoning": "The solution successfully extracts topics from the scholarly text, representing the core conceptual themes with a valid JSON array. While the topics are accurate, the solution includes more topics than the recommended range, which slightly reduces precision."
+  },
+  {
+    "output": "[\n    \"International governance\",\n    \"Multilateral cooperation\",\n    \"Global challenges\",\n    \"Transnational institutions\",\n    \"United Nations\",\n    \"Regional organizations\",\n    \"Diplomatic tensions\",\n    \"Humanitarian crises\",\n    \"Collaborative policy frameworks\",\n    \"Geopolitical landscapes\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "The dynamics of international governance have increasingly centered on multilateral cooperation in response to global challenges. Contemporary geopolitical analysis reveals that transnational institutions like the United Nations and regional organizations play pivotal roles in mediating diplomatic tensions, addressing humanitarian crises, and facilitating collaborative policy frameworks across complex geopolitical landscapes."
+      },
+      "solution_criteria": [
+        "Accurately identify core topics from the scholarly text",
+        "Represent topics as a JSON array of strings",
+        "Capture the substantive conceptual themes present in the passage"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A political science text analyzing international relations and governance"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully meets all mandatory requirements. It provides a JSON array of strings representing topics from the scholarly text, with each topic extracted directly from the passage. The topics cover the key conceptual areas discussed in the text about international governance and multilateral cooperation. While there's some potential for consolidation or refinement of topics, the solution fundamentally achieves the task's objectives."
+  },
+  {
+    "output": "[\n    \"Comparative literature\",\n    \"Cross-cultural literary interactions\",\n    \"Narrative structures\",\n    \"Thematic motifs\",\n    \"Japanese magical realism\",\n    \"Latin American postcolonial fiction\",\n    \"Eurocentric literary paradigms\",\n    \"Narrative exchange\",\n    \"Haruki Murakami\",\n    \"Gabriel Garc\u00eda M\u00e1rquez\",\n    \"Surrealist prose\",\n    \"Magical realist techniques\",\n    \"Literary traditions\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Comparative literature reveals profound insights into cross-cultural literary interactions, particularly in how narrative structures and thematic motifs transcend national boundaries. By examining works from Japanese magical realism and Latin American postcolonial fiction, scholars can uncover intricate patterns of narrative exchange that challenge traditional Eurocentric literary paradigms. The dialogic relationship between Haruki Murakami's surrealist prose and Gabriel Garc\u00eda M\u00e1rquez's magical realist techniques demonstrates how literary traditions mutually inform and transform each other through complex aesthetic and cultural negotiations."
+      },
+      "solution_criteria": [
+        "Accurately identify core topics from the scholarly text",
+        "Represent topics as a JSON array of strings",
+        "Capture both broad and specific conceptual themes"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A comparative literature text discussing cross-cultural literary analysis"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts topics from the scholarly text, meeting all mandatory requirements. It provides a nuanced representation of the text's key themes, covering literary concepts, cultural interactions, and specific references. The topics are appropriately represented as a JSON array of strings without additional commentary."
+  },
+  {
+    "output": "[\n    \"Immunotherapy\",\n    \"Cancer treatment\",\n    \"Metastatic melanoma\",\n    \"Lung cancer\",\n    \"Checkpoint inhibitors\",\n    \"PD-1 antibodies\",\n    \"CTLA-4 antibodies\",\n    \"T-cell responses\",\n    \"Tumor cells\",\n    \"Combination therapies\",\n    \"Targeted molecular interventions\",\n    \"Immune checkpoint blockade\",\n    \"Personalized oncological interventions\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in immunotherapy have transformed cancer treatment paradigms, particularly in metastatic melanoma and lung cancer. By leveraging checkpoint inhibitors like PD-1 and CTLA-4 antibodies, researchers have demonstrated significant improvements in patient survival rates. The mechanism involves activating T-cell responses against tumor cells, effectively reprogramming the immune system's recognition and attack strategies. Combination therapies involving targeted molecular interventions and immune checkpoint blockade have shown promising results in clinical trials, suggesting a potential breakthrough in personalized oncological interventions."
+      },
+      "solution_criteria": [
+        "Accurately identify key medical research topics",
+        "Extract topics as a JSON array of strings",
+        "Cover all distinct subject domains mentioned in the text"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A medical research publication covering multiple health and treatment domains"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully meets all mandatory requirements by providing a JSON array of strings representing topics from the text. The topics capture the key medical research domains discussed in the passage, including specific treatments, cancer types, and intervention strategies. While the topics are somewhat fine-grained, they comprehensively represent the content."
+  },
+  {
+    "output": "[\n    \"Solar photovoltaic technology\",\n    \"Renewable energy\",\n    \"Thin-film solar cells\",\n    \"Perovskite materials\",\n    \"Solar cell efficiency\",\n    \"Environmental sustainability\",\n    \"Carbon emissions\",\n    \"Energy generation\",\n    \"Urban infrastructure\",\n    \"Rural infrastructure\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advancements in solar photovoltaic technology have dramatically transformed renewable energy landscapes. Innovative thin-film solar cells utilizing perovskite materials demonstrate unprecedented efficiency improvements, achieving conversion rates of 25.7% in laboratory settings. Environmental sustainability remains a critical driver, with these emerging technologies promising reduced carbon emissions and enhanced energy generation capabilities in both urban and rural infrastructure development."
+      },
+      "solution_criteria": [
+        "Correctly identify all distinct topics in the passage",
+        "Generate a JSON array containing unique topic strings",
+        "Ensure topics are specific and representative of the text's core themes"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A renewable energy research paper addressing technological and environmental innovations"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts key topics from the scholarly text, capturing technological, environmental, and infrastructural themes. All mandatory requirements are met with a well-structured JSON array containing unique, relevant topic strings. The topics are specific, representative of the text's core themes, and avoid extraneous commentary."
+  },
+  {
+    "output": "[\n    \"Quantum entanglement\",\n    \"Quantum information transfer\",\n    \"Superconducting qubits\",\n    \"Coherent coupling techniques\",\n    \"Microwave pulse sequencing\",\n    \"Quantum state fidelity\",\n    \"Dilution refrigerator\",\n    \"Thermal decoherence\",\n    \"Hybrid aluminum-niobium resonator\",\n    \"Quantum coherence\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advancements in quantum entanglement research have revealed novel mechanisms for quantum information transfer between superconducting qubits. By employing coherent coupling techniques and precision microwave pulse sequencing, researchers demonstrated a quantum state fidelity of 99.7% across a two-qubit system. The experimental setup utilized a dilution refrigerator maintained at 10 millikelvin to minimize thermal decoherence and employed a hybrid aluminum-niobium resonator architecture to enhance quantum coherence times."
+      },
+      "solution_criteria": [
+        "Extract topics related to quantum physics research",
+        "Produce a JSON array of distinct topics",
+        "Capture both experimental and theoretical domain elements"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "A quantum physics paper with complex theoretical and experimental topics"
+    },
+    "score": 10,
+    "reasoning": "The solution successfully extracts topics from the quantum physics research text, capturing both experimental techniques and theoretical concepts. It meets all mandatory requirements by producing a clean JSON array of distinct topic strings without additional commentary. The topics comprehensively represent the key elements of the scholarly text."
+  },
+  {
+    "output": "[\n    \"Global economic dynamics\",\n    \"Emerging market interactions\",\n    \"Neoclassical trade theories\",\n    \"International monetary policies\",\n    \"Developing economies\",\n    \"Capital flow\",\n    \"Economic resilience\",\n    \"Keynesian approaches\",\n    \"Monetarist approaches\",\n    \"Macroeconomic fluctuations\",\n    \"Fiscal interventions\",\n    \"Economic stability\",\n    \"Systemic uncertainty\"\n]",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Global economic dynamics have been significantly transformed by emerging market interactions and neoclassical trade theories. The intersectionality of international monetary policies, particularly in developing economies like Brazil and India, reveals complex patterns of capital flow and economic resilience. Keynesian and monetarist approaches continue to provide competing frameworks for understanding macroeconomic fluctuations, with particular emphasis on how fiscal interventions can modulate economic stability during periods of systemic uncertainty."
+      },
+      "solution_criteria": [
+        "Correctly identify all distinct economic topics mentioned",
+        "Extract topics as a JSON array of unique, precise strings",
+        "Capture both theoretical and geographical economic references"
+      ],
+      "task_description": "Extract topics out of a passage of text from a scholarly article into a JSON array of strings.",
+      "scenario": "An economics article discussing global market trends and economic theories"
+    },
+    "score": 9,
+    "reasoning": "The solution successfully extracts a comprehensive set of economic topics from the passage, meeting all mandatory requirements. The JSON array contains unique, precise strings representing distinct economic concepts, theoretical approaches, and geographical contexts. The topics are extracted without additional commentary and represent the core themes of the text."
+  }
+]

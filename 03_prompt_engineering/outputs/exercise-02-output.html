@@ -1,0 +1,501 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap; 
+                word-wrap: break-word; 
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">20</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">9.3 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">100.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>A computer science research paper with technical and theoretical subtopics</td>
+                <td class="prompt-inputs"><strong>content:</strong> Quantum computing represents a paradigm shift in computational complexity, leveraging quantum mechanical phenomena like superposition and entanglement to perform complex algorithmic operations. Recent advancements in superconducting qubit architectures have enabled researchers to develop quantum circuits with increased coherence times and reduced error rates, potentially revolutionizing cryptography, machine learning, and computational chemistry simulations.</td>
+                <td class="criteria">• Correctly identify all major topics in the text<br>• Generate a JSON array containing extracted topics<br>• Ensure topics are precise and representative of the passage</td>
+                <td class="output"><pre>[
+    "Quantum computing",
+    "Computational complexity",
+    "Quantum mechanical phenomena",
+    "Superposition",
+    "Entanglement",
+    "Superconducting qubit architectures",
+    "Quantum circuits",
+    "Cryptography",
+    "Machine learning",
+    "Computational chemistry simulations"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts topics from the scholarly text, meeting all mandatory requirements. The topics are directly derived from the passage, cover the key concepts, and are presented in a clean JSON array. While the topics are somewhat granular, they accurately represent the content.</td>
+            </tr>
+        
+            <tr>
+                <td>A linguistics article exploring language acquisition and cognitive theories</td>
+                <td class="prompt-inputs"><strong>content:</strong> Language acquisition research reveals complex interactions between cognitive development and linguistic exposure. Neurological studies suggest that children's brains possess remarkable plasticity during early developmental stages, enabling rapid pattern recognition and grammatical structure internalization. Theories proposed by Chomsky and Piaget highlight the intrinsic human capacity for language learning, emphasizing both innate cognitive mechanisms and environmental linguistic stimuli as critical factors in communication skill development.</td>
+                <td class="criteria">• Extract a minimum of 3-4 distinct topics from the passage<br>• Represent topics as a valid JSON array of strings<br>• Capture key conceptual domains mentioned in the text</td>
+                <td class="output"><pre>[
+    "Language acquisition",
+    "Cognitive development",
+    "Linguistic exposure",
+    "Neurological studies",
+    "Brain plasticity",
+    "Pattern recognition",
+    "Grammatical structure",
+    "Language learning theories",
+    "Chomsky's linguistics",
+    "Piaget's developmental theory",
+    "Communication skill development"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts multiple distinct topics from the passage, representing key conceptual domains in language acquisition research. The JSON array meets all mandatory requirements, capturing linguistic, cognitive, and developmental themes. While the topics are somewhat fine-grained, they comprehensively reflect the text's content.</td>
+            </tr>
+        
+            <tr>
+                <td>An excerpt from a psychology paper with multiple sub-fields of psychology</td>
+                <td class="prompt-inputs"><strong>content:</strong> Cognitive behavioral psychology explores the intricate relationships between mental processes, emotional responses, and behavioral patterns. In clinical research, therapists have observed how cognitive distortions in patients with anxiety disorders can significantly impact their perception of risk and threat. Neuropsychological studies further demonstrate that these cognitive mechanisms are deeply rooted in neural pathways, with prefrontal cortex activity playing a crucial role in emotional regulation and adaptive behavioral responses.</td>
+                <td class="criteria">• Identify all distinct psychological domains mentioned<br>• Capture key sub-topics within the psychological text<br>• Represent topics as a valid JSON array of strings</td>
+                <td class="output"><pre>[
+    "Cognitive behavioral psychology",
+    "Mental processes",
+    "Emotional responses", 
+    "Behavioral patterns",
+    "Anxiety disorders",
+    "Cognitive distortions",
+    "Neural pathways",
+    "Prefrontal cortex activity",
+    "Emotional regulation"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts distinct psychological topics from the text, capturing core concepts, sub-domains, and key research areas. It meets all mandatory requirements by presenting a clean JSON array of topic strings without additional commentary, and comprehensively represents the psychological concepts discussed.</td>
+            </tr>
+        
+            <tr>
+                <td>A philosophical text with abstract conceptual and philosophical domains</td>
+                <td class="prompt-inputs"><strong>content:</strong> Phenomenological consciousness represents a complex interplay between subjective experience and ontological structures of perception. Heidegger's concept of Dasein explores the fundamental mode of human being-in-the-world, transcending traditional subject-object dichotomies and revealing how existential understanding emerges through lived experience and temporal awareness. This philosophical investigation challenges epistemological frameworks by positioning consciousness not as a static entity, but as a dynamic, contextually embedded process of meaning-making.</td>
+                <td class="criteria">• Correctly identify core philosophical topics<br>• Capture key conceptual domains mentioned<br>• Represent topics as a JSON array of strings</td>
+                <td class="output"><pre>[
+    "Phenomenological consciousness",
+    "Dasein",
+    "Being-in-the-world",
+    "Subject-object dichotomy",
+    "Existential understanding",
+    "Temporal awareness",
+    "Meaning-making"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts core philosophical topics from the text, represents them as a JSON array of strings without additional commentary, and captures the key conceptual domains discussed in the passage about phenomenological consciousness and existential philosophy.</td>
+            </tr>
+        
+            <tr>
+                <td>A neuroscience article containing complex brain research terminology</td>
+                <td class="prompt-inputs"><strong>content:</strong> Neuroplasticity represents a fundamental mechanism of brain adaptation, where neural networks dynamically reorganize synaptic connections in response to learning experiences. Recent studies using advanced neuroimaging techniques have revealed that the prefrontal cortex demonstrates remarkable plasticity, particularly in regions associated with executive function and cognitive control. Researchers have identified that neurogenesis continues in specific hippocampal regions throughout adulthood, challenging previous assumptions about brain structural rigidity.</td>
+                <td class="criteria">• Accurately extract 3-5 distinct neuroscience topics<br>• Represent topics as a valid JSON array of strings<br>• Capture key conceptual domains from the text</td>
+                <td class="output"><pre>["Neuroplasticity", "Neural Networks", "Synaptic Connections", "Learning Experiences", "Prefrontal Cortex", "Executive Function", "Cognitive Control", "Neurogenesis", "Hippocampus", "Brain Adaptation"]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully meets all mandatory requirements. It provides a JSON array of neuroscience topics extracted from the text, with each topic representing a distinct conceptual domain. While the array contains 10 topics (slightly more than the recommended 3-5), the topics are relevant and directly derived from the source text.</td>
+            </tr>
+        
+            <tr>
+                <td>A passage discussing climate change with interdisciplinary research topics</td>
+                <td class="prompt-inputs"><strong>content:</strong> Climate change research has become increasingly interdisciplinary, integrating perspectives from environmental science, economics, and social policy. Recent studies demonstrate the complex interactions between rising global temperatures, ecosystem disruption, and human socioeconomic systems. Researchers are exploring how anthropogenic carbon emissions impact ocean acidification, biodiversity loss, and regional agricultural productivity, emphasizing the need for comprehensive, collaborative approaches to understanding and mitigating climate change's multifaceted challenges.</td>
+                <td class="criteria">• Accurately extract all distinct research topics mentioned<br>• Represent topics as a JSON array of strings<br>• Capture the interdisciplinary nature of the topics</td>
+                <td class="output"><pre>[
+    "Climate change research",
+    "Environmental science",
+    "Economics",
+    "Social policy",
+    "Global temperatures",
+    "Ecosystem disruption",
+    "Carbon emissions",
+    "Ocean acidification",
+    "Biodiversity loss",
+    "Agricultural productivity"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully meets all mandatory requirements by extracting topics as a JSON array of strings. The topics comprehensively cover the interdisciplinary nature of the text, representing scientific, economic, and policy dimensions of climate change research. The extraction is precise and avoids additional commentary.</td>
+            </tr>
+        
+            <tr>
+                <td>A sociology research paper examining social structures and human interactions</td>
+                <td class="prompt-inputs"><strong>content:</strong> Contemporary social structures are increasingly defined by complex networks of interpersonal relationships that transcend traditional institutional boundaries. Sociologists argue that digital communication platforms have fundamentally transformed how individuals construct and maintain social connections, creating dynamic webs of interaction that challenge classical theories of community and social cohesion. These emerging patterns demonstrate how technological mediation reshapes human interaction, producing new forms of collective identity and social belonging.</td>
+                <td class="criteria">• Accurately identify key sociological topics<br>• Capture core conceptual themes from the text<br>• Represent topics as a valid JSON array of strings</td>
+                <td class="output"><pre>[
+    "Social Structures",
+    "Digital Communication Platforms",
+    "Interpersonal Relationships",
+    "Technological Mediation",
+    "Social Networks",
+    "Collective Identity",
+    "Social Cohesion"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts key sociological topics from the passage, meeting all mandatory requirements. The topics directly reflect the conceptual themes discussed in the text about social structures, digital communication, and technological mediation. The JSON array format is correct, and each topic is presented as a clear, concise string without additional commentary.</td>
+            </tr>
+        
+            <tr>
+                <td>An environmental science text addressing sustainability and ecological systems</td>
+                <td class="prompt-inputs"><strong>content:</strong> Sustainable ecosystem management requires a holistic approach to understanding complex ecological interactions. Climate change significantly impacts biodiversity, with rising temperatures altering habitat ranges and disrupting intricate food web dynamics. Researchers have observed that coastal marine ecosystems are particularly vulnerable, experiencing accelerated coral bleaching and shifts in species migration patterns that challenge traditional conservation strategies.</td>
+                <td class="criteria">• Correctly identify key topical themes from the text<br>• Generate a JSON array of topic strings<br>• Capture the core conceptual elements of the passage</td>
+                <td class="output"><pre>[
+    "Sustainable ecosystem management",
+    "Climate change",
+    "Biodiversity",
+    "Habitat ranges",
+    "Food web dynamics",
+    "Coastal marine ecosystems",
+    "Coral bleaching",
+    "Species migration patterns",
+    "Conservation strategies"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts key topics from the scholarly text, meeting all mandatory requirements. The JSON array contains relevant topics that reflect the core themes of ecosystem management, climate change impacts, and ecological dynamics. The topics are presented as clean strings without additional commentary, and the array format is correct.</td>
+            </tr>
+        
+            <tr>
+                <td>A history text covering multiple historical periods and geographic regions</td>
+                <td class="prompt-inputs"><strong>content:</strong> The complex geopolitical landscape of medieval Europe was shaped by intricate interactions between emerging nation-states, religious institutions, and feudal power structures. From the Byzantine Empire's gradual decline to the rise of the Holy Roman Empire in Central Europe, territorial expansions and cultural exchanges profoundly transformed societal dynamics. The Crusades, spanning from the late 11th to the 13th centuries, exemplified how religious motivations intersected with political ambitions, creating a nuanced network of diplomatic and military interactions across the Mediterranean and Near Eastern regions.</td>
+                <td class="criteria">• Correctly identify key historical topics<br>• Capture breadth of geographic and thematic scope<br>• Represent topics as a valid JSON array of strings</td>
+                <td class="output"><pre>[
+    "Medieval European geopolitics",
+    "Byzantine Empire",
+    "Holy Roman Empire", 
+    "Nation-states",
+    "Religious institutions",
+    "Feudal power structures",
+    "Crusades",
+    "Territorial expansions",
+    "Cultural exchanges",
+    "Mediterranean diplomacy",
+    "Near Eastern interactions"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts key topics from the scholarly text, capturing the geopolitical, religious, and cultural dimensions mentioned. The topics are appropriately abstracted, represent the text's core themes, and are presented in a clean JSON array format. All mandatory requirements are met with high fidelity.</td>
+            </tr>
+        
+            <tr>
+                <td>A biotechnology paper discussing genetic engineering and molecular techniques</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in CRISPR-Cas9 gene editing have revolutionized molecular biology, enabling precise genetic modifications across multiple organism types. By utilizing guide RNA sequences to target specific DNA segments, researchers can now efficiently introduce mutations, delete problematic gene sequences, or insert therapeutic genetic material with unprecedented accuracy. This technique has significant implications for treating genetic disorders, enhancing agricultural crop resilience, and understanding complex genetic interactions at the molecular level.</td>
+                <td class="criteria">• Correctly identify all major topics discussed in the passage<br>• Represent topics as a valid JSON array of strings<br>• Capture both broad and specific themes related to genetic engineering</td>
+                <td class="output"><pre>[
+    "CRISPR-Cas9 gene editing",
+    "Molecular biology",
+    "Genetic modifications",
+    "Guide RNA targeting",
+    "DNA segment manipulation",
+    "Genetic disorders treatment",
+    "Agricultural crop resilience",
+    "Genetic interaction research"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts key topics from the passage, representing them as a valid JSON array of strings. It meets all mandatory requirements by providing a clean, focused list of topics that accurately reflect the text's content. The topics range from broad domains like 'Molecular biology' to specific techniques like 'CRISPR-Cas9 gene editing', demonstrating comprehensive coverage.</td>
+            </tr>
+        
+            <tr>
+                <td>A political science text analyzing international relations and governance</td>
+                <td class="prompt-inputs"><strong>content:</strong> The dynamics of international governance have increasingly centered on multilateral cooperation in response to global challenges. Contemporary geopolitical analysis reveals that transnational institutions like the United Nations and regional organizations play pivotal roles in mediating diplomatic tensions, addressing humanitarian crises, and facilitating collaborative policy frameworks across complex geopolitical landscapes.</td>
+                <td class="criteria">• Accurately identify core topics from the scholarly text<br>• Represent topics as a JSON array of strings<br>• Capture the substantive conceptual themes present in the passage</td>
+                <td class="output"><pre>[
+    "International Governance",
+    "Multilateral Cooperation",
+    "Global Challenges",
+    "Geopolitical Analysis",
+    "Transnational Institutions",
+    "United Nations",
+    "Regional Organizations",
+    "Diplomatic Tensions",
+    "Humanitarian Crises",
+    "Collaborative Policy Frameworks"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts substantive topics from the scholarly text, presents them as a clean JSON array of strings, and covers the conceptual landscape of the passage without additional commentary.</td>
+            </tr>
+        
+            <tr>
+                <td>An artificial intelligence research document with machine learning subtopics</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advancements in deep learning have significantly transformed machine learning paradigms, particularly in neural network architectures. Convolutional Neural Networks (CNNs) have demonstrated remarkable performance in computer vision tasks, while recurrent neural networks (RNNs) and transformer models have revolutionized natural language processing. The emergence of generative adversarial networks (GANs) has further expanded the capabilities of AI in generating synthetic data and understanding complex probabilistic representations.</td>
+                <td class="criteria">• Correctly identify all major machine learning topics mentioned<br>• Produce a JSON array of topics as strings<br>• Ensure no duplicate topics are included</td>
+                <td class="output"><pre>["Deep Learning", "Neural Network Architectures", "Convolutional Neural Networks", "Computer Vision", "Recurrent Neural Networks", "Natural Language Processing", "Generative Adversarial Networks", "Synthetic Data Generation", "Probabilistic Representations"]</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts key machine learning topics from the passage, presents them as a clean JSON array of strings, avoids duplicates, and captures the essential concepts discussed in the text.</td>
+            </tr>
+        
+            <tr>
+                <td>A renewable energy research paper addressing technological and environmental innovations</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advancements in solar photovoltaic technology have dramatically transformed renewable energy landscapes. Innovative thin-film solar cells utilizing perovskite materials demonstrate unprecedented efficiency improvements, achieving conversion rates of 25.7% in laboratory settings. Environmental sustainability remains a critical driver, with these emerging technologies promising reduced carbon emissions and enhanced energy generation capabilities in both urban and rural infrastructure development.</td>
+                <td class="criteria">• Correctly identify all distinct topics in the passage<br>• Generate a JSON array containing unique topic strings<br>• Ensure topics are specific and representative of the text's core themes</td>
+                <td class="output"><pre>[
+    "Solar Photovoltaic Technology",
+    "Perovskite Solar Cells",
+    "Renewable Energy",
+    "Energy Efficiency",
+    "Environmental Sustainability",
+    "Carbon Emissions Reduction",
+    "Infrastructure Development"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution successfully extracts key topics from the scholarly text, capturing the core technological, environmental, and infrastructural themes. All mandatory requirements are met with a clear, well-structured JSON array of unique topic strings that accurately represent the passage's content.</td>
+            </tr>
+        
+            <tr>
+                <td>An anthropological text exploring cultural diversity and human development</td>
+                <td class="prompt-inputs"><strong>content:</strong> In contemporary anthropological research, cultural diversity represents a complex tapestry of human adaptation and social development. Indigenous communities in the Amazon basin demonstrate remarkable resilience through traditional knowledge systems that integrate ecological understanding with intergenerational learning practices. These communities navigate environmental challenges by maintaining intricate social networks and preserving ancestral ecological wisdom that has sustained human populations for thousands of years.</td>
+                <td class="criteria">• Accurately identify 3-5 primary topics from the text<br>• Represent topics as a valid JSON array of strings<br>• Capture the core conceptual themes present in the passage</td>
+                <td class="output"><pre>[
+    "Cultural Diversity",
+    "Indigenous Communities",
+    "Amazon Basin",
+    "Traditional Knowledge Systems",
+    "Ecological Understanding",
+    "Intergenerational Learning",
+    "Social Networks",
+    "Ancestral Ecological Wisdom",
+    "Human Adaptation"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts meaningful topics from the scholarly text, representing the core conceptual themes. While the array slightly exceeds the recommended 3-5 topic range, each topic is relevant and accurately represents an aspect of the passage's content. The solution meets all mandatory requirements with high fidelity.</td>
+            </tr>
+        
+            <tr>
+                <td>An economics article discussing global market trends and economic theories</td>
+                <td class="prompt-inputs"><strong>content:</strong> Global economic dynamics have been significantly transformed by emerging market interactions and neoclassical trade theories. The intersectionality of international monetary policies, particularly in developing economies like Brazil and India, reveals complex patterns of capital flow and economic resilience. Keynesian and monetarist approaches continue to provide competing frameworks for understanding macroeconomic fluctuations, with particular emphasis on how fiscal interventions can modulate economic stability during periods of systemic uncertainty.</td>
+                <td class="criteria">• Correctly identify all distinct economic topics mentioned<br>• Extract topics as a JSON array of unique, precise strings<br>• Capture both theoretical and geographical economic references</td>
+                <td class="output"><pre>["Global Economic Dynamics", "Emerging Market Interactions", "Neoclassical Trade Theories", "International Monetary Policies", "Capital Flow", "Economic Resilience", "Keynesian Economics", "Monetarist Approaches", "Macroeconomic Fluctuations", "Fiscal Interventions", "Economic Stability"]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully meets all mandatory requirements by providing a JSON array of unique economic topics extracted directly from the text. The topics are precise, cover both theoretical frameworks and geographical contexts, and represent the key economic concepts discussed in the passage.</td>
+            </tr>
+        
+            <tr>
+                <td>A biochemistry paper exploring molecular interactions and cellular processes</td>
+                <td class="prompt-inputs"><strong>content:</strong> The intricate molecular mechanisms of cellular signal transduction reveal complex interactions between protein kinases and phosphatase enzymes. Specifically, the mitogen-activated protein kinase (MAPK) cascade demonstrates how extracellular stimuli are transformed into precise intracellular responses through a series of phosphorylation events that modulate gene expression and cellular behavior.</td>
+                <td class="criteria">• Correctly identify key scientific topics from the text<br>• Generate a JSON array of topic strings<br>• Capture both broad and specific topic levels</td>
+                <td class="output"><pre>[
+    "Molecular Mechanisms",
+    "Cellular Signal Transduction", 
+    "Protein Kinases",
+    "Phosphatase Enzymes", 
+    "Mitogen-Activated Protein Kinase (MAPK) Cascade",
+    "Phosphorylation",
+    "Gene Expression",
+    "Cellular Behavior"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts key scientific topics from the text, meeting all mandatory requirements. The topics are scientifically relevant, capture both broad and specific levels of discussion, and are presented in a clean JSON array format. The solution demonstrates a nuanced understanding of the text's scientific content.</td>
+            </tr>
+        
+            <tr>
+                <td>A medical research publication covering multiple health and treatment domains</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advances in immunotherapy have transformed cancer treatment paradigms, particularly in metastatic melanoma and lung cancer. By leveraging checkpoint inhibitors like PD-1 and CTLA-4 antibodies, researchers have demonstrated significant improvements in patient survival rates. The mechanism involves activating T-cell responses against tumor cells, effectively reprogramming the immune system's recognition and attack strategies. Combination therapies involving targeted molecular interventions and immune checkpoint blockade have shown promising results in clinical trials, suggesting a potential breakthrough in personalized oncological interventions.</td>
+                <td class="criteria">• Accurately identify key medical research topics<br>• Extract topics as a JSON array of strings<br>• Cover all distinct subject domains mentioned in the text</td>
+                <td class="output"><pre>[
+    "Immunotherapy",
+    "Cancer Treatment",
+    "Metastatic Melanoma",
+    "Lung Cancer",
+    "Checkpoint Inhibitors",
+    "PD-1 Antibodies",
+    "CTLA-4 Antibodies",
+    "T-cell Responses",
+    "Combination Therapies",
+    "Personalized Oncological Interventions"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully meets all mandatory requirements by providing a JSON array of strings representing key topics from the text. The topics accurately capture the medical research domains discussed, including specific treatments, cancer types, and therapeutic approaches. While there are minor potential refinements, the solution fundamentally achieves the task's objectives.</td>
+            </tr>
+        
+            <tr>
+                <td>An astronomy research excerpt covering cosmological and planetary science topics</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent observations from the James Webb Space Telescope have revealed unprecedented insights into exoplanetary atmospheres and early galactic formation. By analyzing spectroscopic data from distant planetary systems, researchers have identified complex molecular signatures in gas giants orbiting nearby star clusters, suggesting intricate chemical processes that challenge previous models of planetary evolution and potential habitability.</td>
+                <td class="criteria">• Correctly identify core astronomy topics<br>• Produce a JSON array of topics<br>• Capture both specific and broad subject areas</td>
+                <td class="output"><pre>[
+    "James Webb Space Telescope",
+    "Exoplanetary Atmospheres", 
+    "Early Galactic Formation",
+    "Spectroscopic Data",
+    "Planetary Systems",
+    "Molecular Signatures",
+    "Gas Giants",
+    "Planetary Evolution",
+    "Habitability"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution successfully meets all mandatory requirements by producing a JSON array of strings representing topics from the text. The topics are relevant to astronomy, cover the key concepts in the passage, and are extracted without additional commentary. The array includes both specific technologies (James Webb Space Telescope) and broader scientific domains (Planetary Evolution), demonstrating a nuanced approach to topic extraction.</td>
+            </tr>
+        
+            <tr>
+                <td>A comparative literature text discussing cross-cultural literary analysis</td>
+                <td class="prompt-inputs"><strong>content:</strong> Comparative literature reveals profound insights into cross-cultural literary interactions, particularly in how narrative structures and thematic motifs transcend national boundaries. By examining works from Japanese magical realism and Latin American postcolonial fiction, scholars can uncover intricate patterns of narrative exchange that challenge traditional Eurocentric literary paradigms. The dialogic relationship between Haruki Murakami's surrealist prose and Gabriel García Márquez's magical realist techniques demonstrates how literary traditions mutually inform and transform each other through complex aesthetic and cultural negotiations.</td>
+                <td class="criteria">• Accurately identify core topics from the scholarly text<br>• Represent topics as a JSON array of strings<br>• Capture both broad and specific conceptual themes</td>
+                <td class="output"><pre>[
+    "Comparative Literature",
+    "Cross-Cultural Literary Interactions",
+    "Narrative Structures",
+    "Thematic Motifs",
+    "Japanese Magical Realism",
+    "Latin American Postcolonial Fiction",
+    "Narrative Exchange",
+    "Eurocentric Literary Paradigms",
+    "Haruki Murakami",
+    "Gabriel García Márquez",
+    "Literary Traditions",
+    "Aesthetic Negotiations",
+    "Cultural Negotiations"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">9</span></td>
+                <td class="reasoning">The solution successfully extracts topics from the scholarly text, representing a wide range of conceptual and specific themes related to comparative literature. It meets all mandatory requirements by presenting a clean JSON array of string topics without additional commentary. The topics reflect the text's key concepts around cross-cultural literary interactions, narrative structures, and theoretical frameworks.</td>
+            </tr>
+        
+            <tr>
+                <td>A quantum physics paper with complex theoretical and experimental topics</td>
+                <td class="prompt-inputs"><strong>content:</strong> Recent advancements in quantum entanglement research have revealed novel mechanisms for quantum information transfer between superconducting qubits. By employing coherent coupling techniques and precision microwave pulse sequencing, researchers demonstrated a quantum state fidelity of 99.7% across a two-qubit system. The experimental setup utilized a dilution refrigerator maintained at 10 millikelvin to minimize thermal decoherence and employed a hybrid aluminum-niobium resonator architecture to enhance quantum coherence times.</td>
+                <td class="criteria">• Extract topics related to quantum physics research<br>• Produce a JSON array of distinct topics<br>• Capture both experimental and theoretical domain elements</td>
+                <td class="output"><pre>[
+    "Quantum Entanglement",
+    "Quantum Information Transfer",
+    "Superconducting Qubits",
+    "Coherent Coupling Techniques",
+    "Microwave Pulse Sequencing",
+    "Quantum State Fidelity",
+    "Dilution Refrigerator",
+    "Thermal Decoherence",
+    "Quantum Coherence",
+    "Hybrid Resonator Architecture"
+]</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">The solution fully meets all mandatory and secondary criteria. It successfully extracts distinct topics from the quantum physics research text, representing both experimental techniques and theoretical concepts. The JSON array is correctly formatted, contains no extraneous commentary, and comprehensively represents the key themes of the passage.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

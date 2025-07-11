@@ -1,0 +1,321 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "188",
+      "weight": "85",
+      "goal": "Maintain high performance and muscle mass for competitive swimming",
+      "restrictions": "No dairy, high protein requirement"
+    },
+    "solution_criteria": [
+      "Meal plan must exceed 3500 calories",
+      "Include protein in every meal",
+      "Balanced macronutrient distribution",
+      "Accommodate dairy-free requirement"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a professional swimmer requiring high calorie intake"
+  },
+  {
+    "prompt_inputs": {
+      "height": "185",
+      "weight": "95",
+      "goal": "muscle gain and strength development",
+      "restrictions": "lactose intolerant, prefers high protein intake"
+    },
+    "solution_criteria": [
+      "Provide a meal plan with minimum 3000 calories",
+      "Include protein sources in each meal",
+      "Ensure balanced macronutrient distribution",
+      "Accommodate lactose intolerance"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a bodybuilder seeking muscle gain diet"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "68",
+      "goal": "Marathon training nutrition optimization",
+      "restrictions": "Vegan diet, no processed foods"
+    },
+    "solution_criteria": [
+      "Provide balanced macronutrient distribution suitable for endurance training",
+      "Ensure total daily calories meet athlete's energy requirements",
+      "Include plant-based protein sources for muscle recovery",
+      "Demonstrate variety in whole food, nutrient-dense meal selections"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a vegan endurance marathon runner"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "muscle maintenance during intense training",
+      "restrictions": "minimal carbohydrates, no dairy"
+    },
+    "solution_criteria": [
+      "Provides a complete one-day meal plan",
+      "Matches total daily caloric needs for athlete",
+      "Accommodates specified dietary restrictions",
+      "Supports muscle maintenance goal"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a minimalist athlete wanting simple meal options"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "82",
+      "goal": "muscle maintenance and high-intensity performance",
+      "restrictions": "gluten-free"
+    },
+    "solution_criteria": [
+      "Meal plan must be gluten-free",
+      "Provide balanced macronutrient distribution for CrossFit athlete",
+      "Include sufficient protein for muscle recovery",
+      "Total daily calories appropriate for athlete's weight and activity level"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a gluten-free CrossFit athlete"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "Maintain muscle mass and optimize performance for track sprinting",
+      "restrictions": "Limited budget, vegetarian diet"
+    },
+    "solution_criteria": [
+      "Provides balanced daily nutrition under $15",
+      "Meets minimum protein requirements for athlete (1.6-2g per kg bodyweight)",
+      "Includes sufficient calories to support training intensity",
+      "Offers variety within vegetarian constraints"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a budget-conscious college track athlete"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "High-altitude mountain climbing performance nutrition",
+      "restrictions": "High-calorie, lightweight foods suitable for extreme altitude conditions"
+    },
+    "solution_criteria": [
+      "Meal plan must provide minimum 3500 calories",
+      "Include high-protein, easily digestible foods",
+      "Emphasize lightweight, compact nutrition sources",
+      "Account for increased metabolic demands at high altitude"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a high-altitude mountain climber needing specialized nutrition"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "82",
+      "goal": "maintain weight for 70kg wrestling weight class",
+      "restrictions": "high protein, low carbohydrate, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan must stay within 2000-2200 daily calories",
+      "Protein intake should be 1.6-2.0g per kg of body weight",
+      "Meal plan supports wrestler's weight maintenance goal",
+      "Adheres to specified dietary restrictions"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a wrestler managing weight class restrictions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "Optimize training performance and muscle recovery for Olympic distance triathlon",
+      "restrictions": "Lactose intolerant, no red meat"
+    },
+    "solution_criteria": [
+      "Provide balanced macronutrient distribution suitable for high-intensity endurance training",
+      "Include protein sources compatible with lactose intolerance and no red meat restriction",
+      "Demonstrate meal timing appropriate for triathlon training energy demands",
+      "Ensure total daily caloric intake supports athlete's metabolic needs"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a triathlete balancing complex macronutrient needs"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "68",
+      "goal": "maintain muscle mass and optimize climbing performance",
+      "restrictions": "vegetarian, no eggs"
+    },
+    "solution_criteria": [
+      "Provide balanced daily nutrition meeting 2500-2800 calories",
+      "Include sufficient protein sources for muscle maintenance",
+      "Incorporate complex carbohydrates for sustained energy",
+      "Ensure meal plan is fully vegetarian compliant"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a vegetarian rock climbing athlete"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "72",
+      "goal": "Maintain competitive cycling performance for senior athletes",
+      "restrictions": "Low sodium, heart-healthy diet with soft/easy-to-chew foods"
+    },
+    "solution_criteria": [
+      "Provides a balanced nutritional plan with adequate protein for muscle maintenance",
+      "Includes meals suitable for an elderly athlete's digestive needs",
+      "Ensures sufficient caloric intake to support cycling performance",
+      "Accommodates specified dietary restrictions"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with an elderly competitive cyclist maintaining performance"
+  },
+  {
+    "prompt_inputs": {
+      "height": "185",
+      "weight": "110",
+      "goal": "Maximize strength and muscle preservation during keto diet",
+      "restrictions": "High protein, low carbohydrate, no grains"
+    },
+    "solution_criteria": [
+      "Meal plan must maintain ketogenic macronutrient ratios",
+      "Total daily calories should support powerlifting performance",
+      "Protein intake sufficient for muscle maintenance",
+      "Meal distribution supports training and recovery"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a keto-diet powerlifter"
+  },
+  {
+    "prompt_inputs": {
+      "height": "168",
+      "weight": "62",
+      "goal": "maintain muscle mass and optimize performance for gymnastics competition",
+      "restrictions": "paleo diet only, no grains, dairy, or processed foods"
+    },
+    "solution_criteria": [
+      "Meal plan must align with paleo dietary guidelines",
+      "Total daily calories should support athletic performance",
+      "Provide balanced macronutrient distribution for muscle maintenance",
+      "Include nutrient-dense whole food options"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a paleo diet-following gymnast"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "75",
+      "goal": "Maintain muscle mass and optimize performance during tennis tournament",
+      "restrictions": "Lactose-intolerant, cannot consume dairy products"
+    },
+    "solution_criteria": [
+      "Provide balanced nutrition without dairy products",
+      "Meet daily caloric needs for high-intensity athletic performance",
+      "Include protein sources suitable for muscle maintenance",
+      "Ensure meal plan is practical for a tennis player's schedule"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a lactose-intolerant tennis player"
+  },
+  {
+    "prompt_inputs": {
+      "height": "185",
+      "weight": "105",
+      "goal": "Maximize muscle recovery and protein synthesis for Olympic weightlifting performance",
+      "restrictions": "No dairy, must be high-protein diet"
+    },
+    "solution_criteria": [
+      "Provide at least 250g of protein across meals",
+      "Balance macronutrients for muscle recovery",
+      "Accommodate dairy-free dietary restriction",
+      "Design meals suitable for high-intensity training"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with an Olympic weightlifter requiring extreme protein intake"
+  },
+  {
+    "prompt_inputs": {
+      "height": "190",
+      "weight": "110",
+      "goal": "Muscle maintenance and high-performance training recovery",
+      "restrictions": "No dairy, gluten-sensitive"
+    },
+    "solution_criteria": [
+      "Provides minimum 4000 calories",
+      "Includes balanced macronutrient distribution",
+      "Accommodates specified dietary restrictions",
+      "Supports athletic performance and recovery"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a professional rugby player with high-energy requirements"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "82",
+      "goal": "Recovery nutrition after shoulder rehabilitation",
+      "restrictions": "Low inflammation diet, no dairy, limited processed foods"
+    },
+    "solution_criteria": [
+      "Provide balanced macronutrient intake supporting muscle recovery",
+      "Accommodate specified dietary restrictions",
+      "Include anti-inflammatory food choices",
+      "Maintain appropriate caloric intake for healing athlete"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with an athlete recovering from recent injury"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "68",
+      "goal": "Optimize performance and muscle recovery for competitive swimming",
+      "restrictions": "Lactose intolerant, no red meat"
+    },
+    "solution_criteria": [
+      "Provide balanced macronutrient distribution suitable for high-intensity swimming training",
+      "Accommodate lactose intolerance with alternative protein and calcium sources",
+      "Include sufficient calories to support athletic performance and recovery"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a teenage swimmer in competitive training"
+  },
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "68",
+      "goal": "Optimize nutrition for 100-mile ultramarathon training and recovery",
+      "restrictions": "Vegan, gluten-free"
+    },
+    "solution_criteria": [
+      "Provides adequate daily caloric intake for high-intensity endurance training",
+      "Meets nutritional needs with plant-based protein sources",
+      "Balances macronutrients for sustained energy and muscle recovery",
+      "Accommodates vegan and gluten-free dietary restrictions"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a plant-based ultra-marathon runner"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178",
+      "weight": "75",
+      "goal": "Maintain stable blood glucose during long cycling training while optimizing performance nutrition",
+      "restrictions": "Diabetic diet, low glycemic index foods, need for consistent carbohydrate intake"
+    },
+    "solution_criteria": [
+      "Meal plan must include balanced macronutrients with controlled carbohydrate portions",
+      "Provide blood sugar stabilizing food choices",
+      "Include nutrition supporting endurance cycling performance",
+      "Demonstrate carbohydrate distribution across daily meals"
+    ],
+    "task_description": "Write a compact concise one day meal plan for a single athlete.",
+    "scenario": "Test with a diabetic cyclist managing blood sugar through nutrition"
+  }
+]
